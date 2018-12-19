@@ -3,7 +3,23 @@ sass:
     - _sass
     - node_modules
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 exclude:
   - node_modules
 
 theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
