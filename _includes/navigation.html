@@ -1,16 +1,18 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark"">
-  <a class="navbar-brand" href="#">Ohaeboy</a>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container">
+  <a class="navbar-brand" href="{{ site.url }}">Ohaeboy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       {% for item in site.data.navigation %}
       <li class="nav-item active">
         <a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name }}{% if page.url==item.link | relative_url %}<span class="sr-only">(current)</span>{% endif %}</a>
       </li>
       {% endfor %}
     </ul>
+  </div>
   </div>
 </nav>
