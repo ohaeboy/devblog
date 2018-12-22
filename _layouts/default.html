@@ -15,7 +15,7 @@
   <!--- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
   <link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   {% feed_meta %}
   {% seo %}
@@ -42,7 +42,10 @@
         <![endif]-->
     {% include navigation.html %}
     <div class="container">
-    {{ content }}
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-4">{% include leftbar.html %}</div>
+        <div class="col-md-8">{{ content }}</div>
+      </div>
       </div>
     {% include footer.html %}
 
