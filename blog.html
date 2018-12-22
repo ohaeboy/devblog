@@ -2,13 +2,14 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
-
 <ul>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
+  <li class="card">
+    <div class="card-body">
+      <h6 class="">{{ post.date | date: "%m/%d/%Y" }}</h6>
+      <h2 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="card-text">{{ post.excerpt }}</p>
+    </div>
+  </li>
   {% endfor %}
 </ul>

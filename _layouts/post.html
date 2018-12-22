@@ -1,8 +1,23 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h2>{{ page.description }}</h2>
-<p>{{ page.date | date_to_string }}</p>
+<div class="card">
+  <div class="card-body">
+    <h6 class="card-header text-center">{{ page.date | date_to_long_string }}</h6>
+    <h2 class="card-title">{{ page.title }}</h2>
+    <h5 class="card-subtitle mb-2 text-muted">{{ page.description }}</h5>
+    <div class="card-text">
+      {{ content }}
+    </div>
+    <div class="card-footer">
+      {% if page.previous.url %}
+      <a href="{{page.previous.url | relative_url }}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a href="{{page.next.url | relative_url }}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </div>
 
-{{ content }}
+  </div>
+
+</div>
