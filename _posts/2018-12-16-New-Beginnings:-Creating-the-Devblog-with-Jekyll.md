@@ -1,6 +1,7 @@
 ---
 author: Ohaeboy
 description: Starting new development with a blog
+categories: jekyll
 ---
 I've found myself with a strong desire to attempt game development. Not sure if it is something I will take seriously and follow through with, or if it is just another distraction that I find as a form of procrastination.
 

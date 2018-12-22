@@ -1,6 +1,7 @@
 ---
 author: Ohaeboy
 description: A not so How-to-Guide to getting Bootstrap working with Jekyll for Github Pages
+categories: [jekyll, bootstrap]
 ---
 
 When I learned front-end web development, I was introduced to Bootstrap and how easy it is to create quickly a responsive website. I knew from the beginning, if I were to make any blog or site, it will be using the framework for easy responsive design.
@@ -13,4 +14,4 @@ I eventually came upon a [guide](https://simpleit.rocks/ruby/jekyll/tutorials/ho
 
 Happy to see I got Jekyll to work with Bootstrap and also running online. Simple layout and styling for now. Nothing customized just yet. Just gonna use vanilla styling. But will change the layout at least to accommodate content.
 
-Progress! 
+Progress!
