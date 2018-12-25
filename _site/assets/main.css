@@ -2134,10 +2134,16 @@ a.text-dark:hover, a.text-dark:focus { color: #1d2124 !important; }
   .table-dark { color: inherit; }
   .table-dark th, .table-dark td, .table-dark thead th, .table-dark tbody + tbody { border-color: #dee2e6; }
   .table .thead-dark th { color: inherit; border-color: #dee2e6; } }
-body { margin-top: 60px; font-family: 'Roboto', sans-serif !important; background-color: #e6ecf0; }
+body { margin-top: 56px; font-family: 'Roboto', sans-serif !important; background-color: #e6ecf0; }
 
 .container-fluid { padding: 0; }
 
-.bg-dark { background-color: #ABB8C2 !important; }
+.navbar { position: fixed; top: 0; right: 0; left: 0; z-index: 1000; height: 46px; }
+
+.bg-light { background-color: #FFFFFF !important; border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
 
 ul { padding: 0; }
+
+.card-title a { color: #14171a; }
+
+.card { border-radius: 0; }
